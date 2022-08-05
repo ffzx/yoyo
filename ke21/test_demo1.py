@@ -1,4 +1,4 @@
-from yoyoketang.ke21.api import step1, step2, step3
+from ke21.api import step1, step2, step3
 import allure
 
 

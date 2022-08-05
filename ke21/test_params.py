@@ -1,7 +1,7 @@
 """
 登录用例参数化
 """
-from yoyoketang.ke15.api.login_api import login
+from ke15.api.login_api import login
 import requests
 import pytest
 import allure
