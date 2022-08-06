@@ -6,6 +6,7 @@ pytest框架和python有不同
 不会去执行if __name__ == '__main__':，也没有这样用的
 """
 
+
 def test_1():
     print("11111111")
 
@@ -16,7 +17,7 @@ def test_2():
 
 def test_3():
     print("33333333")
-    assert 1==2
+    assert 1 == 2
 
 
 if __name__ == '__main__':
