@@ -3,16 +3,28 @@
 2.拿到token
 3.传到请求头部，替换变量
 4.查询商品
+
+requests里data和json是请求的格式有区别
+
+data:
+'Content-Type': 'application/x-www-form-urlencoded'
+username=test&password=123456
+
+json:
+'Content-Type': 'application/json'
+'{"username": "test", "password": "123456"}'
+
 """
 import requests
 
 # 1.先登录
 url1 = "http://49.235.92.12:7005/api/v1/login"
 body = {
-   "username": "test11",
+   "username": "test",
    "password": "123456"
 }
-r1 = requests.post(url1, json=body)
+r1 = requests.post(url1, data=body)
+
 print(r1.status_code)
 print(r1.text)
 # type 看数据类型
