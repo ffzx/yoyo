@@ -1,12 +1,12 @@
 import pytest
 
 
-# @pytest.fixture(scope="function")
-# def login_fixture():
-#     """前置：登录"""
-#     print("登录，拿到token")
-#     token = "xxxxx"
-#     return token
+@pytest.fixture(scope="function")
+def login_fixture():
+    """前置：登录"""
+    print("登录，拿到token")
+    token = "xxxxx"
+    return token
 
 
 def test_a(login_fixture):
