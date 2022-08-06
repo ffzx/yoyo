@@ -6,8 +6,10 @@
 def func():
     for i in range(10):
         # i = 0
-        if i >= 5:
-            return i
+        if i <= 5:
+            print(i)
+            i += 1
+            # return i
         else:
             return "111"  # 遇到return 结束函数
 
