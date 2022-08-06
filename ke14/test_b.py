@@ -1,5 +1,10 @@
 import pytest
 
+"""
+pytest框架和python有不同
+遇到test开头的自动识别执行，
+不会去执行if __name__ == '__main__':，也没有这样用的
+"""
 
 def test_1():
     print("11111111")
