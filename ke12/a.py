@@ -8,7 +8,7 @@ import requests
 s = requests.Session()   # Session() 实例 (虚拟浏览器概念)
 url = "http://49.235.92.12:7005/api/v1/login"
 body = {
-    "username": "test11",
+    "username": "test",
     "password": "123456"
 }
 r1 = s.post(url, json=body)
