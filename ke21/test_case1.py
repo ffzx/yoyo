@@ -16,7 +16,6 @@ class TestCase1():
     def test_a2(self):
         print("2222222222222")
 
-
     @allure.story("添加商品失败场景")
     @allure.title("输入不合法商品名称，输入code合法,保存失败")
     def test_a3(self):
@@ -26,7 +25,6 @@ class TestCase1():
     def test_a4(self):
         print("2222222222222")
         assert 1 == 2
-
 
     def test_a5(self):
         print("2222222222222")
