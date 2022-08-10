@@ -1,8 +1,10 @@
 import pytest
 import requests
-from yoyoketang.ke17.api.login_api import login
+from ke17.api.login_api import login
 
-
+"""
+连接数据库
+"""
 @pytest.fixture(scope="session")
 def requests_session():
     """创建session会话"""
