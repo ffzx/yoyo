@@ -3,7 +3,9 @@ http/https  https = http + ssl
 
 ws/wss   wss = ws + ssl
 """
-from websocket import create_connection
+from socket import create_connection
+
+# from websocket import create_connection
 import json
 
 ws = create_connection("ws://49.235.92.12:7005/test_websocket")
